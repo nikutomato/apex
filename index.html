@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APEX 語録</title>
+
+</head>
+<body>
+    <video autoplay muted loop playsinline id="background-video">
+    <source src="/Users/tsuruokatouma/Desktop/エペウェブサイト/素材/apex/backmv.mp4" type="video/mp4">
+    <!-- ブラウザが動画をサポートしていない場合の代替メッセージ -->
+    お使いのブラウザは動画タグに対応していません。
+    </video>
+    <table border="1">
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <tr>
+            <td colspan="3">
+                <h1>気になるリンクをタップ</h1>
+            </td>
+        </tr>
+        <tr>
+            <td> <a href="goroku.html"> <h2>エペ語録</h2></a></td>
+            <td><a href="buki.html"><h2>武器</h2></a></td>
+            <td><a href="legend.html"><h2>レジェンド</h2></a></td>
+        </tr>
+    </table>
+    <script>
+  window.addEventListener("pageshow", function (event) {
+    const video = document.getElementById("background-video");
+    if (event.persisted) {
+      // キャッシュから復元されたときに再生を再開
+      video.play();
+    }
+  });
+</script>
+
+</body>
+</html>

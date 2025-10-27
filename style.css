@@ -1,0 +1,56 @@
+body{
+    background-image: url("/Users/tsuruokatouma/Desktop/エペウェブサイト/素材/apex/back.png");
+    /* 背景動画のスタイル */
+#bg-video {
+  position: fixed;       /* スクロールしても固定 */
+  top: 0;
+  left: 0;
+  width: 100vw;          /* 画面いっぱいに表示 */
+  height: 100vh;
+  object-fit: cover;     /* 縦横比を保って拡大 */
+  z-index: -1;           /* 背景に配置 */
+}
+
+/* コンテンツのスタイル */
+.content {
+  position: relative;
+  z-index: 1;            /* 動画の上に表示 */
+  color: white;
+  text-align: center;
+  top: 40%;
+  font-family: "Helvetica Neue", sans-serif;
+}
+/* 背景動画のスタイル */
+#background-video {
+  position: fixed;      /* スクロールしても固定 */
+  top: 0;
+  left: 0;
+  width: 100vw;         /* 画面いっぱいに広げる */
+  height: 100vh;
+  object-fit: cover;    /* 縦横比を保って拡大 */
+  z-index: -1;          /* 背景として後ろに配置 */
+}
+
+/* テーブルなどのコンテンツを前面に */
+table {
+  position: relative;
+  z-index: 1;
+  color: white;         /* 背景動画の上でも見やすく */
+  background-color: rgba(0, 0, 0, 0.5); /* 半透明の黒背景（お好みで） */
+  margin: 100px auto;   /* 中央寄せ */
+  border-collapse: collapse;
+}
+
+td, th {
+  padding: 10px 20px;
+  border: 1px solid white;
+}
+
+}
+
+h1{
+    color: crimson;
+}
+h2{
+    color: aqua;
+}
